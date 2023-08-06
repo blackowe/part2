@@ -2,6 +2,21 @@ start_day = 1
 start_month = 1
 start_year = 1970
 
+months = {
+  1: 31,
+  2: 28 or 29,
+  3: 31,
+  4: 30,
+  5: 31,
+  6: 30,
+  7: 31,
+  8: 31,
+  9: 30,
+  10: 31,
+  11: 30,
+  12: 31
+}
+
 # number of seconds in question
 n_s = 321651669
     
