@@ -66,8 +66,21 @@ if calendar.isleap(new_year):
 total = 99
 for key,value in months.items():
     if (total - value) <= 0:
-        total -= value
         return (total,key)
     else:
         total -= value
 
+
+"""
+def my_func(total):
+    
+    for key,value in months.items():
+        if (total - value) <= 0:
+            return (total,key)
+        else:
+            total -= value
+
+print(my_func(91))
+
+
+"""
