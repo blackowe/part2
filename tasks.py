@@ -60,6 +60,14 @@ if calendar.isleap(new_year):
         extra_leap = yes
         # change Februarys days from 28 -> 29
         months.update({2: 29})
-# find month
 
+
+# find month
+total = 99
+for key,value in months.items():
+    if (total - value) <= 0:
+        total -= value
+        return (total,key)
+    else:
+        total -= value
 
