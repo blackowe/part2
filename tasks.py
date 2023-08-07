@@ -4,7 +4,7 @@ start_year = 1970
 
 months = {
   1: 31,
-  2: 28 or 29,
+  2: 28,
   3: 31,
   4: 30,
   5: 31,
@@ -49,10 +49,17 @@ print("DAYS REMAINING: ",days_remain)
 
 
 
-#FIND MONTH
+# FIND days:
 # LEAP DAYS + DAYS REMAINING
-total_days = days_remain + 
-# check if new_year is leap_year
-if (calendarstart_year+years_added)
-# days until leap day = after 59 days
+if calendar.isleap(new_year):
+    if days_remain+leap_days <= 59:
+        total_days = days_remain + leap_days - 1
+        extra_leap = no
+    else:
+        total_days = days_remain + leap_days
+        extra_leap = yes
+        # change Februarys days from 28 -> 29
+        months.update({2: 29})
+# find month
+
 
