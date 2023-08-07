@@ -22,16 +22,11 @@ n_s = 321651669
     
 #sec_in_yr = 31536000
 
+
 # add year
 years_added = n_s // 31536000
-print(years_added)
-
-# find days left 
-days_remain = (n_s - (31536000*years_added)) // 86400
-print(days_remain)
-
-# days until leap day = after 59 days
-
+new_year = years_added + start_year
+print("YEARS ADDED: ",new_year)
 
 import calendar
 def calc_leap_days(yr):
@@ -43,5 +38,21 @@ def calc_leap_days(yr):
             leap_days +=1
         start_year +=4
     return leap_days
-    
-print(calc_leap_days(2120))
+
+leap_days = calc_leap_days(start_year + years_added)
+print("LEAP DAYS TO BE ADDED:", leap_days)
+
+
+# find days left 
+days_remain = (n_s - (31536000*years_added)) // 86400
+print("DAYS REMAINING: ",days_remain)
+
+
+
+#FIND MONTH
+# LEAP DAYS + DAYS REMAINING
+total_days = days_remain + 
+# check if new_year is leap_year
+if (calendarstart_year+years_added)
+# days until leap day = after 59 days
+
